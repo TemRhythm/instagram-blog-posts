@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,bold');
+
+$color-white: #f5f4f5;
+$color-yellow: #f7e031;
+
+body {
+  margin: 0;
+  font-family: -apple-system, 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  background-color: #1e1e1e;
+  color: #d7ba7d;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  margin: 10px 0;
+  th,td {
+    border: 1px solid $color-white;
+    padding: 5px;
+  }
+}
+
+.App {
+  display: flex;
+}
+.sider {
+  &-fixed {
+    overflow: auto;
+    height: 100vh!important;
+    position: fixed!important;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    &-left {
+      left: 0;
+    }
+    &-right {
+      right: 0;
+    }
+  }
+}
+.post-actions {
+  padding: 16px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 32px;
+}
+.posts-list {
+  position: fixed;
+}
+.post {
+}
+
+:root {
+  --slide-padding: 40px;
+}
+.slide-wrapper {
+  margin-bottom: 10px;
+}
+.slide {
+  $p: &;
+  box-sizing: border-box;
+  position: relative;
+  width: 540px;
+  height: 540px;
+  background: #243d4a;
+  padding: var(--slide-padding);
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__logo {
+    position: absolute;
+    top: var(--slide-padding);
+    right: var(--slide-padding);
+    width: 70px;
+  }
+
+  &__content {
+    height: 70%;
+    ul {
+      padding-inline-start: 25px;
+    }
+  }
+
+  &--intro {
+    justify-content: center;
+    #{$p}__content {
+      height: auto;
+      font-size: xx-large;
+      text-align: center;
+    }
+  }
+}
+
+
+.pagination {
+  position: absolute;
+  top: var(--slide-padding);
+  left: var(--slide-padding);
+  display: flex;
+  &__item {
+    margin-left: 5px;
+    width: 10px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: $color-yellow;
+    &--current {
+      width: 20px;
+    }
+  }
+}

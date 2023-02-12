@@ -1,0 +1,3 @@
+- `null` – means that the variable contains nothing. Use this type to put in variable something that means nothing;
+- `undefined` – for not assigned variables. *Bad practice to assign to variable value with this special type. Use null instead.*
+- `symbol` – to create a unique identifier for an object

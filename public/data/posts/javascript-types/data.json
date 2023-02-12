@@ -1,0 +1,24 @@
+{
+  "title": "JavaScript data types",
+  "slides": [{
+    "title": null,
+    "type": "markdown",
+    "content": "slide1.md"
+  }, {
+    "title": "4 primitive types",
+    "type": "markdown",
+    "content": "slide2.md"
+  }, {
+    "title": "3 special types",
+    "type": "markdown",
+    "content": "slide3.md"
+  }, {
+    "title": "One non-primitive type",
+    "type": "markdown",
+    "content": "slide4.md"
+  }, {
+    "title": "Not JavaScript types",
+    "type": "markdown",
+    "content": "slide5.md"
+  }]
+}
